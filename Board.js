@@ -9,8 +9,12 @@ class Board{
     }
 
     get elements(){
-        var elements = this.bars;
-      //  elements.push(this.ball);
+        var elements = [];
+        for (let i = 0; i < this.bars.length; i++) {
+            elements[i] = this.bars[i];
+        }
+        elements.push(this.ball);
         return elements;
     }
+    
 }export {Board};

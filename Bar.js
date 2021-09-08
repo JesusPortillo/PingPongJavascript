@@ -7,7 +7,7 @@ class Bar{
         this.board = board;
         this.board.bars.push(this);
         this.kind = "rectangle";
-        this.speed = 10;
+        this.speed = 20;
     }
 
     down() {
