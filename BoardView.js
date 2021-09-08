@@ -17,12 +17,19 @@ class BoardView{
     }
 
     draw(ctx, element){
-        if (element !== null && element.hasOwnProperty("kind")) {
-            switch (element.kind) {
-                case "rectangle":
-                    ctx.fillRect(element.x, element.y, element.width, element.height);
+        switch (element.kind) {
+            case "rectangle":
+                ctx.fillRect(element.x, element.y, element.width, element.height);
                     break;
-            }
         }
+    }
+
+    clean(){
+        this.ctx.clearRect(0,0,this.board.width,this.board.height);
+    }
+
+    play(){
+        this.clean();
+        this.drawBoardView();
     }
 }export {BoardView};

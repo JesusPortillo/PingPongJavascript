@@ -10,7 +10,7 @@ class Board{
 
     get elements(){
         var elements = this.bars;
-        elements.push(this.ball);
+      //  elements.push(this.ball);
         return elements;
     }
 }export {Board};
