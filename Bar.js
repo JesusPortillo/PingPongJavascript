@@ -10,7 +10,13 @@ class Bar{
         this.speed = 10;
     }
 
-    
+    down() {
+        this.y += this.speed;
+    }
+
+    up(){
+        this.y -= this.speed;
+    }
 
 
 }export {Bar};
