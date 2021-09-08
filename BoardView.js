@@ -6,4 +6,6 @@ class BoardView{
         this.board = board;
         this.ctx = canvas.getContext("2d");
     }
+
+    
 }export {BoardView};
