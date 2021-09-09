@@ -9,7 +9,7 @@ class Ball{
         this.direction = 1;
         this.bounce_angle = 0;
         this.max_bounce_angle = Math.PI / 12;
-        this.speed = 3;
+        this.speed = 7;
 
         board.ball = this;
         this.kind ="circle";
@@ -39,4 +39,14 @@ class Ball{
         if (this.x > (this.board.width / 2)) this.direction = -1;
         else this.direction = 1;
     }
+
+
+    keepIntoBoard() {
+        if (
+          this.y + this.speedY > this.board.height - this.radius ||
+          this.y + this.speedY < this.radius
+        ) {
+          this.speedY = -this.speedY;
+        }
+      }
 }export {Ball};

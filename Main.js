@@ -24,19 +24,27 @@ document.addEventListener("keydown",function(ev) {
    
     if (ev.keyCode === 38) {
         ev.preventDefault();
-        bar1.up();
+        if (0 !== bar1.y) {
+            bar1.up();
+        }
         console.log(bar1.toString());
     }else if (ev.keyCode === 40) {
         ev.preventDefault();
-        bar1.down();
+        if (400 - bar1.height !== bar1.y) {
+            bar1.down();
+        }
         console.log(bar1.toString());
     }else if (ev.keyCode === 87) {
         ev.preventDefault();
         //w
-        bar2.up();
+        if (0 !== bar2.y) {
+            bar2.up();
+          }
     }else if (ev.keyCode === 83) {
         ev.preventDefault();
-        bar2.down();
+        if (400 - bar1.height !== bar2.y) {
+            bar2.down();
+          }
     }else if (ev.keyCode === 32) {
         ev.preventDefault();
         board.playing = !board.playing;
