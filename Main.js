@@ -8,7 +8,7 @@ import {Ball} from "./Ball.js";
 window.requestAnimationFrame(Main);
 var board = new Board(800, 400);
 var bar1 = new Bar(20, 100, 40, 100, board);
-var bar2 = new Bar(700, 100, 40, 100, board);
+var bar2 = new Bar(740, 100, 40, 100, board);
 var canvas = document.getElementById("canvas");
 var board_view = new BoardView(canvas, board);
 var ball = new Ball(350,100,10,board);
