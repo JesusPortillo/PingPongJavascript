@@ -1,0 +1,19 @@
+body{
+    background: #4B79A1;  
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  
+    background: linear-gradient(to right, #283E51, #4B79A1); 
+}
+
+h1{
+    color: white;
+}
+.cuadro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#canvas{
+    background-color: white;
+    border-style: none;
+}
